@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-html, body, #app, #app>div {
+html, body, #app, #app>div, .graphiql-container {
   height: 100%
 }
