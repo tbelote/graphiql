@@ -5,8 +5,10 @@ import ReactDOM from 'react-dom';
 
 import 'graphiql/graphiql.css';
 
+const server = prompt('GraphQL server')
+
 const fetcher = createGraphiQLFetcher({
-  url: 'https://my.backend/graphql',
+  url: server,
 });
 
 ReactDOM.render(<GraphiQL fetcher={fetcher} />, document.body);
